@@ -1,0 +1,192 @@
+.formdiv {
+    position: relative;
+    margin: 20px auto 0;
+    background: linear-gradient(0deg , black, rgb(81, 80, 80));
+    padding: 3px;
+    margin-bottom: 20px;
+    width: 95%;
+    height: 400px;
+    z-index: 1;
+    border-radius: 25px;
+   
+    
+    
+}
+
+.glow::before , .glow::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(45deg , #00ACC1 , #024d57 , #8de6f2 , black , #3ee7fd);
+    background-size: 400%;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -2;
+    animation: animate 20s linear infinite ;
+    padding: 2px;
+    border-radius: 25px;
+   
+    
+
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.glow::after{
+    filter: blur(30px);
+}
+
+.addsup_submitbtn {
+    align-self: center;
+    width: 300px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.submitbtn:hover{
+  background-color: #008C9E;
+}
+
+.sup_listtable{
+    box-shadow: 2px 2px 12px #00ACC1, -1px -1px 8px #00ACC1;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border-radius: 15px;
+    margin-top: 40px;
+    
+    
+  }
+  
+  tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+  }
+  
+  tr:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px #00ACC1, -1px -1px 8px #00ACC1;
+    background-color: black;
+  }
+
+  th {
+    background-color: #00ACC1;
+    color: white;
+  }
+  th,td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #00ACC1;
+  }
+
+  tr:first-child th:first-child{
+    border-top-left-radius: 15px;
+  }
+  tr:first-child th:last-child{
+    border-top-right-radius: 15px;
+  }
+  tr:last-child td:first-child{
+    border-bottom-left-radius: 15px;
+    border-bottom: 0px;
+  }
+
+  tr:last-child td:last-child{
+    border-bottom-right-radius: 15px;
+    border-bottom: 0px;
+  }
+
+  tr:last-child td:nth-child(2){
+    border-bottom: 0px;
+  }
+  tr:last-child td:nth-child(3){
+    border-bottom: 0px;
+  }
+  tr:last-child td:nth-child(4){
+    border-bottom: 0px;
+  }
+  tr:last-child td:nth-child(5){
+    border-bottom: 0px;
+  }
+  tr:last-child td:nth-child(6){
+    border-bottom: 0px;
+  }
+
+.searchdiv{
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px;
+  background: black;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 2px 2px 12px #00ACC1, -1px -1px 8px #00ACC1;
+
+}
+
+.searchdiv:hover .sup_searchbar{
+  width: 400px;
+}
+
+.searchdiv .sup_searchbar{
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+
+.searchdiv .material-symbols-outlined{
+  color: #00ACC1;
+  font-size: 40px;
+}
+
+.material-symbols-outlined{
+  margin-right:12px ;
+}
+
+.sup_searchbar{
+  color: white;
+}
+  
+.addsup_input {
+  width: 95%;
+  height: 35px;
+  border-radius: 25px;
+  margin-top: 3px;
+  color: black;
+  outline: none;
+  border: none;
+
+}
+
+.sup_editbtn{
+  border-radius: 10px;
+  background-color: #f7be22;
+}
+
+.sup_deletebtn{
+  border-radius: 10px;
+  background-color:  #cd1515;
+  margin-left: 10px;
+}
+
+.sup_deletebtn:hover{
+  background-color: #9e0000f0;
+}
+
+.sup_editbtn:hover{
+  background-color: #ad830f;
+}

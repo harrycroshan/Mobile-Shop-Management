@@ -1,0 +1,63 @@
+/* App.css */
+
+.App {
+  font-family: Arial, sans-serif; /* Set a font family */
+  background-color: black; /* Background color for the app */
+  color: white; /* Default text color */
+   /* Add padding around the app */
+}
+
+.sup_nav {
+  background-color: black; /* Navigation background color */
+  padding: 10px; /* Padding around the nav */
+  margin-bottom: 20px; /* Space below the nav */
+  height: 90px;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-shadow: 2px 2px 14px #00ACC1, -1px -1px 10px #00ACC1;
+
+}
+
+.sup_nav .sup_ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space out the links */
+}
+
+.sup_nav .sup_li {
+  margin-left: 30px;
+  font-size: 10px;
+  
+}
+
+.sup_nav a {
+  font-size: 18px;
+  font-family: Exo;
+  display: block; /* Make links block elements */
+  color: #00ACC1; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px; /* Padding around links */
+  text-align: center; /* Center align text */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  transition: color 0.3s;
+  
+}
+
+.sup_nav a:hover {
+  border-radius: 5px; /* Rounded corners on hover */
+  color: white;
+}
+
+
+
+.logo{
+  width: 20%px;
+  height: 100%;
+}
+
+
